@@ -1,6 +1,20 @@
+const titleStyleOptions = {
+  color: 'green',
+}
+
+
+const paragraphStyleOptions = {
+  color: 'green',
+}
+
+
 const MDXComponents = {
-  p: (props) => <p style={{ fontSize: '50px' }} {...props} />,
-  h1: (props) => <h1 style={{ color: 'blue' }} {...props} />
+  h1: (props) => {
+    return <h1 className="text-center" style={titleStyleOptions} {...props} />
+  },
+  p: (props) => {
+    return <p className="text-center" style={paragraphStyleOptions} {...props} />
+  },
 }
 
 export default MDXComponents;
