@@ -14,3 +14,7 @@ a {
 * {
   background-color: #f0f2f5;
 }
+
+.nav-item {
+  padding-left: 32px;
+}
