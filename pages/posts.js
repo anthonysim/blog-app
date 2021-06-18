@@ -2,7 +2,7 @@ import Navbar from '../components/Navbar';
 
 export default function Posts() {
   return (
-    <div className="container">
+    <div>
       <Navbar />
       Posts!
     </div>
