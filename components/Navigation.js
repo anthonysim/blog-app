@@ -7,7 +7,7 @@ export default function Navigation() {
       <Navbar variant="light">
         <Container>
           <Link href="/">
-            <Navbar.Brand><a style={{ color: '#d23669' }}>Anthony Sim | DEV&nbsp;&nbsp;&nbsp;</a></Navbar.Brand>
+            <Navbar.Brand><a className="logo" style={{ color: '#d23669' }}>Anthony Sim | DEV&nbsp;&nbsp;&nbsp;</a></Navbar.Brand>
           </Link>
           <Nav className="me-auto">
             <Link href="/latest">

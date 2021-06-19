@@ -14,11 +14,13 @@ export default function Card() {
   return (
     <div >
       <br />
+      {/* Greeting */}
       <h1 className="titles text-center">Weclome...</h1>
       <h5 className="message text-center text-muted">Get Started by selecting a category.</h5>
       <br />
       <div className="row" >
 
+        {/* LIFE */}
         <div className="col-lg-6">
           <br />
           <Link href="/posts" >
@@ -39,6 +41,7 @@ export default function Card() {
           </Link>
         </div>
 
+        {/* REACT */}
         <div className="col-lg-6">
           <br />
           <Link href="/posts" >
@@ -56,7 +59,7 @@ export default function Card() {
           </Link>
         </div>
 
-
+        {/* NEXTJS */}
         <div className="col-lg-6">
           <br />
           <Link href="/posts" >
@@ -74,8 +77,7 @@ export default function Card() {
           </Link>
         </div>
 
-
-
+        {/* AWS */}
         <div className="col-lg-6">
           <br />
           <Link href="/posts" >
@@ -94,7 +96,6 @@ export default function Card() {
             </a>
           </Link>
         </div>
-
       </div>
     </div>
   )

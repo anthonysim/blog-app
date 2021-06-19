@@ -7,7 +7,7 @@ export default function Latest() {
 
     <div>
       <Navigation />
-      <Card />
+      Latest!
     </div>
   )
 }
