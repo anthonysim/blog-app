@@ -10,13 +10,14 @@ export default function Card() {
 
   const bodyStyleOptions = {
     backgroundColor: 'white',
-    // textAlign: 'left'
   }
 
   return (
     <div >
       <br />
-      <h1 className="titles">Categories</h1>
+      <h1 className="titles text-center">Weclome...</h1>
+      <h5 className="message text-center text-muted">Get Started by selecting a category.</h5>
+      <br />
       <div className="row" >
 
         <div className="col-lg-6">
