@@ -1,4 +1,4 @@
-import Navbar from '../components/Navbar';
+import Navigation from '../components/Navigation';
 import Card from '../components/Card';
 
 
@@ -6,7 +6,7 @@ export default function Latest() {
   return (
 
     <div>
-      <Navbar />
+      <Navigation />
       <Card />
     </div>
   )

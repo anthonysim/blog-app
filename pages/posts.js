@@ -1,9 +1,9 @@
-import Navbar from '../components/Navbar';
+import Navigation from '../components/Navigation';
 
 export default function Posts() {
   return (
     <div>
-      <Navbar />
+      <Navigation />
       Posts!
     </div>
   )

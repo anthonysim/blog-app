@@ -20,7 +20,6 @@ a {
 }
 
 .titles, .logo {
-  font-size: 50px;
   background: -webkit-linear-gradient(#eee, #d23669);
   background-clip: border-box;
   -webkit-background-clip: text;
