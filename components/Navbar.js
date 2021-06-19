@@ -2,11 +2,15 @@ import Link from 'next/link';
 
 
 export default function Navbar() {
+  const styleOptions = {
+    color: '#d23669'
+  }
+
   return (
     <nav className="navbar navbar-expand-lg">
       <div className="container-fluid">
         <Link href="/">
-          <a className="navbar-brand">Anthony Sim</a>
+          <a className="navbar-brand" style={styleOptions}>Anthony Sim</a>
         </Link>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 navbar-right">
