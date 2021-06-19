@@ -1,4 +1,5 @@
 import Navbar from '../components/Navbar';
+import Card from '../components/Card';
 
 
 export default function Latest() {
@@ -6,7 +7,7 @@ export default function Latest() {
 
     <div>
       <Navbar />
-      <div>Latest!</div>
+      <Card />
     </div>
   )
 }
