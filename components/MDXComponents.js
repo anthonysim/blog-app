@@ -1,6 +1,6 @@
-const titleStyleOptions = {
-  color: 'green',
-}
+// const titleStyleOptions = {
+//   color: 'green',
+// }
 
 
 const paragraphStyleOptions = {
@@ -9,9 +9,9 @@ const paragraphStyleOptions = {
 
 
 const MDXComponents = {
-  h1: (props) => {
-    return <h1 className="text-center" style={titleStyleOptions} {...props} />
-  },
+  // h1: (props) => {
+  //   return <h1 className="text-center" style={titleStyleOptions} {...props} />
+  // },
   p: (props) => {
     return <p className="text-center" style={paragraphStyleOptions} {...props} />
   },

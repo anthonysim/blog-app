@@ -10,25 +10,45 @@ export default function Card() {
 
   const bodyStyleOptions = {
     backgroundColor: 'white',
+    // textAlign: 'left'
   }
 
   return (
     <div >
       <br />
-      <br />
-      <h1>Categories</h1>
+      <h1 className="titles">Categories</h1>
       <div className="row" >
 
-        <div className="col-sm-6">
+        <div className="col-lg-6">
           <br />
           <Link href="/posts" >
             <a className="btn">
               <div className="card shadow">
                 <div className="card-body" style={bodyStyleOptions}>
-                  <h5 className="card-title" style={titlebodyStyleOptions}>Life</h5>
-                  <p className="card-text" style={bodyStyleOptions}>With supporting text below as a natural fdsafdsfasdfdsfdsdfdsfdsf
-                    dsfdfdsfdsfdfdfdsfdsffdsafsdfsddfdssfdsfdfdffd
-                    fsdafsdfsdafsdafsdfdsfdsfsdfdsfsdfsdfsdfsdfsdfdsafdsfsdffsf.</p>
+                  <h5 className="card-title" style={titlebodyStyleOptions}>LIFE</h5>
+                  <p className="card-text" style={bodyStyleOptions}>
+                    A collection of thoughts, feelings, and reflections that cover
+                    everything from life career, and everything in between.
+                    <br />
+                    <br />
+                  </p>
+                  <strong className="bg-white">Read more -></strong>
+                </div>
+              </div>
+            </a>
+          </Link>
+        </div>
+
+        <div className="col-lg-6">
+          <br />
+          <Link href="/posts" >
+            <a className="btn">
+              <div className="card shadow">
+                <div className="card-body" style={bodyStyleOptions}>
+                  <h5 className="card-title" style={titlebodyStyleOptions}>REACT</h5>
+                  <p className="card-text" style={bodyStyleOptions}>
+                    React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”.
+                  </p>
                   <strong className="bg-white">Read more -></strong>
                 </div>
               </div>
@@ -37,43 +57,42 @@ export default function Card() {
         </div>
 
 
-        <div className="col-sm-6">
+        <div className="col-lg-6">
           <br />
-          <div className="card shadow">
-            <div className="card-body" style={bodyStyleOptions}>
-              <h5 className="card-title" style={{ backgroundColor: 'white', color: '#d23669' }}>React</h5>
-              <p className="card-text" style={bodyStyleOptions}>With supporting text below as a natural fdsafdsfasdfdsfdsdfdsfdsfdsfdfdsfdsfdfdfdsfdsffdsafsdfsdfsdafsdfsdafsdafsdfdsfdsfsdfdsfsdfsdfsdfsdfsdfsf.</p>
-              <Link href="/posts" >
-                <a className="btn btn-primary">Read more</a>
-              </Link>
-            </div>
-          </div>
+          <Link href="/posts" >
+            <a className="btn">
+              <div className="card shadow">
+                <div className="card-body" style={bodyStyleOptions}>
+                  <h5 className="card-title" style={titlebodyStyleOptions}>NEXTJS</h5>
+                  <p className="card-text" style={bodyStyleOptions}>
+                    Production grade React applications that scale. The world's leading companies use Next.js by Vercel to build static and dynamic websites and web applications.
+                  </p>
+                  <strong className="bg-white">Read more -></strong>
+                </div>
+              </div>
+            </a>
+          </Link>
         </div>
 
-        <div className="col-sm-6">
-          <br />
-          <div className="card shadow">
-            <div className="card-body" style={bodyStyleOptions}>
-              <h5 className="card-title" style={bodyStyleOptions}>NextJS</h5>
-              <p className="card-text" style={bodyStyleOptions}>With supporting text below as a natural fdsafdsfasdfdsfdsdfdsfdsfdsfdfdsfdsfdfdfdsfdsffdsafsdfsdfsdafsdfsdafsdafsdfdsfdsfsdfdsfsdfsdfsdfsdfsdfsf.</p>
-              <Link href="/posts" >
-                <a className="btn btn-primary">Read more</a>
-              </Link>
-            </div>
-          </div>
-        </div>
 
-        <div className="col-sm-6">
+
+        <div className="col-lg-6">
           <br />
-          <div className="card shadow">
-            <div className="card-body" style={bodyStyleOptions}>
-              <h5 className="card-title" style={bodyStyleOptions}>Animation</h5>
-              <p className="card-text" style={bodyStyleOptions}>With supporting text below as a natural fdsafdsfasdfdsfdsdfdsfdsfdsfdfdsfdsfdfdfdsfdsffdsafsdfsdfsdafsdfsdafsdafsdfdsfdsfsdfdsfsdfsdfsdfsdfsdfsf.</p>
-              <Link href="/posts" >
-                <a className="btn btn-primary">Read more</a>
-              </Link>
-            </div>
-          </div>
+          <Link href="/posts" >
+            <a className="btn">
+              <div className="card shadow">
+                <div className="card-body" style={bodyStyleOptions}>
+                  <h5 className="card-title" style={titlebodyStyleOptions}>AWS</h5>
+                  <p className="card-text" style={bodyStyleOptions}>
+                    Amazon Web Services offers reliable, scalable, and inexpensive cloud computing services. Free to join, pay only for what you use.
+                    <br />
+                    <br />
+                  </p>
+                  <strong className="bg-white">Read more -></strong>
+                </div>
+              </div>
+            </a>
+          </Link>
         </div>
 
       </div>
