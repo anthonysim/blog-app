@@ -14,6 +14,9 @@ export default function Home() {
       </Head>
       <Navigation />
       <Card />
+      <footer id="foot">
+        <span >© 2021, Anthony Sim.</span>
+      </footer>
     </div>
   )
 }

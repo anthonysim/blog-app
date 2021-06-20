@@ -3,6 +3,7 @@ import { Navbar, Container, Nav } from 'react-bootstrap';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 
+
 export default function Navigation() {
   return (
     <div>
@@ -32,11 +33,8 @@ export default function Navigation() {
           {/* Linkedin */}
           < a target="_blank" href="https://github.com/anthonysim" > <FaGithub style={{ fontSize: '30px' }} /></a>
 
-
         </Container>
       </Navbar>
-
     </div>
-
   )
 }
