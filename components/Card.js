@@ -14,9 +14,10 @@ export default function Card() {
   return (
     <div >
       <br />
+
       {/* Greeting */}
       <h1 className="titles text-center">Weclome...</h1>
-      <h5 className="message text-center text-muted">Get Started by selecting a category.</h5>
+      <h5 className="message text-center text-muted"><strong>Get Started </strong>by selecting a category.</h5>
       <br />
       <div className="row" >
 
@@ -29,7 +30,7 @@ export default function Card() {
                 <div className="card-body" style={bodyStyleOptions}>
                   <h5 className="card-title" style={titlebodyStyleOptions}>LIFE</h5>
                   <p className="card-text" style={bodyStyleOptions}>
-                    A collection of thoughts, feelings, and reflections that cover
+                    A collection of thoughts, feelings, and reflections that cover{"\n"}
                     everything from life career, and everything in between.
                     <br />
                     <br />
@@ -68,7 +69,7 @@ export default function Card() {
                 <div className="card-body" style={bodyStyleOptions}>
                   <h5 className="card-title" style={titlebodyStyleOptions}>NEXTJS</h5>
                   <p className="card-text" style={bodyStyleOptions}>
-                    Production grade React applications that scale. The world's leading companies use Next.js by Vercel to build static and dynamic websites and web applications.
+                    Production grade React applications that scale. Companies use Next.js to build static and dynamic websites and web applications.
                   </p>
                   <strong className="bg-white">Read more -></strong>
                 </div>
@@ -88,7 +89,7 @@ export default function Card() {
                   <p className="card-text" style={bodyStyleOptions}>
                     Amazon Web Services offers reliable, scalable, and inexpensive cloud computing services. Free to join, pay only for what you use.
                     <br />
-                    <br />
+
                   </p>
                   <strong className="bg-white">Read more -></strong>
                 </div>
