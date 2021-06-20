@@ -8,5 +8,6 @@ Blog application for my site on www.anthonysim.dev
 
 ## Technologies
 - NextJS
-- Bootstrap
+- Bootstrap / Bootstrap-React
 - Vercel (Deployment)
+ - MDX

@@ -4,7 +4,8 @@
 
 
 const paragraphStyleOptions = {
-  color: 'green',
+  color: 'blue',
+  fontSize: '50px'
 }
 
 
@@ -13,7 +14,7 @@ const MDXComponents = {
   //   return <h1 className="text-center" style={titleStyleOptions} {...props} />
   // },
   p: (props) => {
-    return <p className="text-center" style={paragraphStyleOptions} {...props} />
+    return <p className="" style={paragraphStyleOptions} {...props} />
   },
 }
 

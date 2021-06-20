@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import { Navbar, Container, Nav } from 'react-bootstrap';
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { AiOutlineMail } from "react-icons/ai";
 
 export default function Navigation() {
   return (
@@ -20,6 +22,17 @@ export default function Navigation() {
               <a>Contact</a>
             </Link>
           </Nav>
+
+          {/* Email */}
+          <a target="_blank" href="#"><AiOutlineMail style={{ fontSize: '30px' }} />&nbsp;&nbsp;&nbsp;</a>
+
+          {/* Github */}
+          <a target="_blank" href="https://www.linkedin.com/in/anthony-sim-28214850/"><FaLinkedin style={{ fontSize: '30px' }} />&nbsp;&nbsp;&nbsp;</a>
+
+          {/* Linkedin */}
+          < a target="_blank" href="https://github.com/anthonysim" > <FaGithub style={{ fontSize: '30px' }} /></a>
+
+
         </Container>
       </Navbar>
 
