@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Navigation from '../components/Navigation';
 
 
 export default function Contact() {
@@ -10,7 +9,6 @@ export default function Contact() {
         <meta name="description" content="list of posts" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navigation />
       Contact!
     </div>
   )
