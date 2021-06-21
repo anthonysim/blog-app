@@ -30,7 +30,8 @@ export default function Card() {
                 <div className="card-body" style={bodyStyleOptions}>
                   <h5 className="card-title" style={titlebodyStyleOptions}>REACT</h5>
                   <p className="card-text" style={bodyStyleOptions}>
-                    React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”.
+                    React is a declarative, efficient, and flexible JavaScript library for
+                    building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”.
                   </p>
                   <strong className="bg-white">Read more -></strong>
                 </div>

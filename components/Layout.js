@@ -7,6 +7,13 @@ export default function Layout({ children }) {
     <div>
       <Navigation />
       {children}
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <Footer />
     </div>
   )

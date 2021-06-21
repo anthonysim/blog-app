@@ -25,7 +25,7 @@ export default function Navigation() {
           </Nav>
 
           {/* Email */}
-          <a target="_blank" href="#"><AiOutlineMail style={{ fontSize: '30px' }} />&nbsp;&nbsp;&nbsp;</a>
+          <a target="_blank" href="mailto:anthonyysim@gmail.com"><AiOutlineMail style={{ fontSize: '30px' }} />&nbsp;&nbsp;&nbsp;</a>
 
           {/* Github */}
           <a target="_blank" href="https://www.linkedin.com/in/anthony-sim-28214850/"><FaLinkedin style={{ fontSize: '30px' }} />&nbsp;&nbsp;&nbsp;</a>
