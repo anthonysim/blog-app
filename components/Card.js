@@ -21,27 +21,6 @@ export default function Card() {
       <br />
       <div className="row" >
 
-        {/* LIFE */}
-        <div className="col-lg-6">
-          <br />
-          <Link href="/posts" >
-            <a className="btn">
-              <div className="card shadow">
-                <div className="card-body" style={bodyStyleOptions}>
-                  <h5 className="card-title" style={titlebodyStyleOptions}>LIFE</h5>
-                  <p className="card-text" style={bodyStyleOptions}>
-                    A collection of thoughts, feelings, and reflections that cover{"\n"}
-                    everything from life career, and everything in between.
-                    <br />
-                    <br />
-                  </p>
-                  <strong className="bg-white">Read more -></strong>
-                </div>
-              </div>
-            </a>
-          </Link>
-        </div>
-
         {/* REACT */}
         <div className="col-lg-6">
           <br />
@@ -70,6 +49,8 @@ export default function Card() {
                   <h5 className="card-title" style={titlebodyStyleOptions}>NEXTJS</h5>
                   <p className="card-text" style={bodyStyleOptions}>
                     Production grade React applications that scale. Companies use Next.js to build static and dynamic websites and web applications.
+                    <br />
+                    <br />
                   </p>
                   <strong className="bg-white">Read more -></strong>
                 </div>
@@ -89,7 +70,25 @@ export default function Card() {
                   <p className="card-text" style={bodyStyleOptions}>
                     Amazon Web Services offers reliable, scalable, and inexpensive cloud computing services. Free to join, pay only for what you use.
                     <br />
+                    <br />
+                  </p>
+                  <strong className="bg-white">Read more -></strong>
+                </div>
+              </div>
+            </a>
+          </Link>
+        </div>
 
+        {/* Misc. */}
+        <div className="col-lg-6">
+          <br />
+          <Link href="/posts" >
+            <a className="btn">
+              <div className="card shadow">
+                <div className="card-body" style={bodyStyleOptions}>
+                  <h5 className="card-title" style={titlebodyStyleOptions}>Animation</h5>
+                  <p className="card-text" style={bodyStyleOptions}>
+                    The GreenSock Animation Platform (GSAP) is a popular set of JavaScript tools for building animations on the web. Anything you see in your web browser can be animated with GSAP.
                   </p>
                   <strong className="bg-white">Read more -></strong>
                 </div>

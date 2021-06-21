@@ -1,8 +1,10 @@
+import styles from '../styles/Layout.module.css';
+
 export default function Footer() {
   return (
     <div>
-      <footer id="foot">
-        <span >© 2021 | Anthony Sim</span>
+      <footer className={styles.foot}>
+        <span >© 2021 | ForgetfulSE Inc</span>
       </footer>
     </div>
   )

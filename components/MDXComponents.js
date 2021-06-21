@@ -1,20 +1,20 @@
-// const titleStyleOptions = {
-//   color: 'green',
-// }
+const titleStyleOptions = {
+  // textAlign: 'center',
+  color: '#d23669',
+}
 
 
 const paragraphStyleOptions = {
-  color: 'blue',
-  fontSize: '50px'
+  fontSize: '20px',
 }
 
 
 const MDXComponents = {
-  // h1: (props) => {
-  //   return <h1 className="text-center" style={titleStyleOptions} {...props} />
-  // },
+  h1: (props) => {
+    return <h1 style={titleStyleOptions} {...props} />
+  },
   p: (props) => {
-    return <p className="" style={paragraphStyleOptions} {...props} />
+    return <p style={paragraphStyleOptions} {...props} />
   },
 }
 
