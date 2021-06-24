@@ -5,9 +5,13 @@ import Layout from '../components/Layout';
 // styling
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/globals.css';
+import "prismjs/themes/prism-tomorrow.css";
+
 
 
 function MyApp({ Component, pageProps }) {
+
+
   return (
     <MDXProvider components={MDXComponents}>
       <div className="container">
@@ -15,6 +19,7 @@ function MyApp({ Component, pageProps }) {
           <Component {...pageProps} />
         </Layout>
       </div>
+
     </MDXProvider>
   )
 }
