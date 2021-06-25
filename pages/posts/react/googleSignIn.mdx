@@ -1,5 +1,7 @@
 <!-- component imports -->
 import Navigation from '../../../components/Navigation';
+import SyntaxHighlight from '../../../lib/SyntaxHighlight';
+
 
 <!-- meta data -->
 export const meta = {
@@ -15,14 +17,10 @@ export const meta = {
 ###### june 20, 2021 | 5 min read | react
 
 
-
-<pre class="language-css">
-  <code>
-    {'<script src="https://apis.google.com/js/platform.js?onload=init" async defer></script>'}
-  </code>
-</pre>
-
-
+<SyntaxHighlight str={ `
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+` }
+/>
 
 
 <br/>

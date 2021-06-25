@@ -1,7 +1,7 @@
 import Head from 'next/head';
 
 
-export default function Posts() {
+export default function AllPostsPage() {
   return (
     <div>
       <Head>
@@ -9,7 +9,7 @@ export default function Posts() {
         <meta name="description" content="list of posts" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      Posts!
+      lists of all posts Posts!
     </div>
   )
 }

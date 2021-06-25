@@ -1,5 +1,6 @@
 html,
 body {
+  background-color: #f0f2f5;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -11,9 +12,6 @@ a {
   text-decoration: none;
 }
 
-* {
-  background-color: #f0f2f5;
-}
 
 .nav-item {
   padding-left: 32px;

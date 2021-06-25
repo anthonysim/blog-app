@@ -14,7 +14,6 @@ export default function Card() {
   return (
     <div >
       <br />
-
       {/* Greeting */}
       <h1 className="titles text-center">Weclome...</h1>
       <h5 className="message text-center text-muted"><strong>Get Started </strong>by selecting a category.</h5>

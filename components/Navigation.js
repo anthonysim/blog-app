@@ -13,15 +13,9 @@ export default function Navigation() {
             <Navbar.Brand><a className="logo" style={{ color: '#d23669' }}>Anthony Sim | DEV&nbsp;&nbsp;&nbsp;</a></Navbar.Brand>
           </Link>
           <Nav className="me-auto">
-            <Link href="/latest">
-              <a>Latest&nbsp;&nbsp;&nbsp;&nbsp;</a>
-            </Link>
-            <Link href="/posts">
-              <a>Posts&nbsp;&nbsp;&nbsp;&nbsp;</a>
-            </Link>
-            <Link href="/contact">
-              <a>Contact</a>
-            </Link>
+            <Link href="/latest">Latest&nbsp;&nbsp;&nbsp;&nbsp;</Link>
+            <Link href="/posts">Posts&nbsp;&nbsp;&nbsp;&nbsp;</Link>
+            <Link href="/contact">Contact</Link>
           </Nav>
 
           {/* Email */}
@@ -35,6 +29,6 @@ export default function Navigation() {
 
         </Container>
       </Navbar>
-    </div>
+    </div >
   )
 }

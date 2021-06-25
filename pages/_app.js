@@ -5,8 +5,6 @@ import Layout from '../components/Layout';
 // styling
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/globals.css';
-import "prismjs/themes/prism-tomorrow.css";
-
 
 
 function MyApp({ Component, pageProps }) {
