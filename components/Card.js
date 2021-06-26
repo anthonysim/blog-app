@@ -32,7 +32,7 @@ export default function Card() {
                     React is a declarative, efficient, and flexible JavaScript library for
                     building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”.
                   </p>
-                  <strong className="bg-white">Read more -></strong>
+                  <strong className="bg-white">Read more {'->'}</strong>
                 </div>
               </div>
             </a>
@@ -52,7 +52,7 @@ export default function Card() {
                     <br />
                     <br />
                   </p>
-                  <strong className="bg-white">Read more -></strong>
+                  <strong className="bg-white">Read more {'->'}</strong>
                 </div>
               </div>
             </a>
@@ -72,7 +72,7 @@ export default function Card() {
                     <br />
                     <br />
                   </p>
-                  <strong className="bg-white">Read more -></strong>
+                  <strong className="bg-white">Read more {'->'}</strong>
                 </div>
               </div>
             </a>
@@ -90,7 +90,7 @@ export default function Card() {
                   <p className="card-text" style={bodyStyleOptions}>
                     The GreenSock Animation Platform (GSAP) is a popular set of JavaScript tools for building animations on the web. Anything you see in your web browser can be animated with GSAP.
                   </p>
-                  <strong className="bg-white">Read more -></strong>
+                  <strong className="bg-white">Read more {'->'}</strong>
                 </div>
               </div>
             </a>

@@ -1,51 +1,94 @@
-<!-- component imports -->
-import Navigation from '../../../components/Navigation';
-
 <!-- meta data -->
 export const meta = {
   id: 1,
-  title: "How to SignIn with Google with React",
-  publishDate: "2021-06-20T21:46:00.321Z",
+  title: "Google Sign In with React",
+  publishDate: new Date('June 20, 2020'),
   author: "Anthony Sim",
   tag: ["react", "google", "signin"],
 };
 
 ---
 # Google Sign In with React
-###### june 20, 2021 | 5 min read | react
+###### june 20, 2021 | 2 min read | react
 
+<br/>
 
-```
+Here are the links to the official docs and my github repo for reference.
+- <a target="_blank" href="https://developers.google.com/identity/sign-in/web/reference" style={{ color: "blue" }}>Official Reference</a>
+- <a target="_blank" href="https://github.com/anthonysim/google-gapi-signin" style={{ color: "blue" }}>Github Repo</a>
+
+<br/>
+
+**Step 1: Add the following script to your index.html**
+
+```js
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 ```
 
+<br/>
+
+**Step 2: Create a Client ID from Google Credentials **<a target="_blank" href="https://console.cloud.google.com/apis/credentials" style={{ color: "blue" }}>here.</a>
+
+Note, make sure you specify the “Authorized Javascript origin.” Example: https://localhost:3000
+
+<br/>
+<br/>
+
+**Step 3: Load and initiate the Google API platform library.**
+
 ```
-function hello() {
-  console.log('🦆 u')
+// loads and initates when App is "mounted"
+useEffect(() => {
+  window.gapi.load('client:auth2', () => {
+    window.gapi.client.init({
+      clientId: 'put in your google client id that you created in Step 2 here',
+      scope: 'email'
+    })
+  });
+}, [])
+```
+
+<br/>
+<br/>
+
+**Step 4: Create a button and click handler to sign in and sign out.**
+
+```
+// click handler
+  async function googleHandler() {
+  try {
+    const auth = window.gapi.auth2.getAuthInstance();
+
+    if (auth.isSignedIn.get() === false) {
+      await auth.signIn();
+    } else {
+      await auth.signOut();
+    }
+  } catch (err) {
+    console.error(err);
+  }
 }
+
+// button
+<button onClick={googleHandler}>Sign in with Google</button>
 ```
 
-
-<br/>
-Before we start, all the information provided in this post was referenced from <a target="_blank" href="https://developers.google.com/identity/sign-in/web/reference" style={{ color: "blue" }}>here.</a>
-<br/>
-<br/>
-Step 1: Add the following script to your index.html
-<br/>
-Step 2: Create a Client ID from Google Credentials <a target="_blank" href="https://console.cloud.google.com/apis/credentials" style={{ color: "blue" }}>here.</a>
-<br/>
-Note, make sure you specify the “Authorized Javascript origin.”
-Example: https://localhost:3000
-<br/>
-Step 3: Load and initiate the Google API platform library.
-<br/>
-Step 4: Create a button and click handler to sign in and sign out.
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
 <br/>
 <br/>
 
+**Useful gapi methods:**
+
+```
+const auth = window.gapi.auth2.getAuthInstance();
+
+// checks if you're signed in/out true/false
+auth.isSignedIn.get()
+
+// signs you in
+auth.signIn();
+
+// signs you out
+auth.signOut();
+```
+
+That's it! Thanks for reading!
