@@ -21,7 +21,6 @@ const MDXComponents = {
       </SyntaxHighlighter>
     )
   }
-  // eslint-disable-next-line react/display-name
 }
 
 export default MDXComponents;

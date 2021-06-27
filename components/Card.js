@@ -23,7 +23,7 @@ export default function Card() {
         {/* REACT */}
         <div className="col-lg-6">
           <br />
-          <Link href="/posts" >
+          <Link href="/posts/react" >
             <a className="btn">
               <div className="card shadow">
                 <div className="card-body" style={bodyStyleOptions}>
