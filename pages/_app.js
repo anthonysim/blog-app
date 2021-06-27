@@ -8,8 +8,6 @@ import '../styles/globals.css';
 
 
 function MyApp({ Component, pageProps }) {
-
-
   return (
     <MDXProvider components={MDXComponents}>
       <div className="container">
@@ -17,7 +15,6 @@ function MyApp({ Component, pageProps }) {
           <Component {...pageProps} />
         </Layout>
       </div>
-
     </MDXProvider>
   )
 }

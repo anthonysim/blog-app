@@ -33,12 +33,12 @@ export default function AllReactPosts({ data }) {
       <br />
       <div style={{ marginLeft: '200px' }}>
         <Link href="/posts/react/googleSignIn" passHref>
-          <a><h4 style={{ color: '#d23669' }}><strong>{data.title}</strong></h4></a>
+          <a><h4 style={{ color: '#d23669' }}><strong>{data.title}</strong></h4>
+            <span>{data.publishDate}&nbsp;&nbsp;|</span>&nbsp;&nbsp;
+            <span>{data.time}</span>
+            <p>{data.description}</p>
+          </a>
         </Link>
-
-        <span>{data.publishDate}&nbsp;&nbsp;|</span>&nbsp;&nbsp;
-        <span>{data.time}</span>
-        <p>{data.description}</p>
       </div>
     </div >
   )
