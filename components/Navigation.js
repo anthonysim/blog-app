@@ -13,7 +13,7 @@ export default function Navigation() {
             <Navbar.Brand><a className="logo" style={{ color: '#d23669' }}>Anthony Sim | DEV&nbsp;&nbsp;&nbsp;</a></Navbar.Brand>
           </Link>
           <Nav className="me-auto">
-            <Link href="/latest">Latest&nbsp;&nbsp;&nbsp;&nbsp;</Link>
+            {/* <Link href="/latest">Latest&nbsp;&nbsp;&nbsp;&nbsp;</Link> */}
             <Link href="/posts">Posts&nbsp;&nbsp;&nbsp;&nbsp;</Link>
             {/* <Link href="/contact">Contact</Link> */}
           </Nav>

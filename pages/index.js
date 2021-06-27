@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import Card from '../components/Card';
+import FrontCard from '../components/FrontCard';
 
 
 export default function Home() {
@@ -11,7 +11,7 @@ export default function Home() {
         <meta name="description" content="welcome page" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Card />
+      <FrontCard />
     </div>
   )
 }
