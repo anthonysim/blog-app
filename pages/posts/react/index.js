@@ -11,8 +11,8 @@ export async function getStaticProps() {
   const postModules = await Promise.all(
     postFilenames.map(async (file) => import(`./${file}`))
   );
+  // console.log(postModules)
   const postMetadata = postModules.map(({ meta }) => meta);
-  console.log(postMetadata)
 
   return {
     props: {
@@ -21,7 +21,7 @@ export async function getStaticProps() {
   }
 }
 
-export default function AllReactPage({ data }) {
+export default function AllReactPosts({ data }) {
   return (
     <div >
       <Head>

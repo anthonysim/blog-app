@@ -14,7 +14,7 @@ export default function Navigation() {
           </Link>
           <Nav className="me-auto">
             {/* <Link href="/latest">Latest&nbsp;&nbsp;&nbsp;&nbsp;</Link> */}
-            <Link href="/posts">Posts&nbsp;&nbsp;&nbsp;&nbsp;</Link>
+            <Link href="#">Posts&nbsp;&nbsp;&nbsp;&nbsp;</Link>
             {/* <Link href="/contact">Contact</Link> */}
           </Nav>
 
