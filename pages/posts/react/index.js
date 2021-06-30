@@ -8,15 +8,13 @@ import path from 'path';
 export async function getStaticProps() {
   const postDirectory = path.join(process.cwd(), "pages/posts/react");
   const postFilenames = fs.readdirSync(postDirectory).filter(file => file.includes('mdx'));
-  const postModules = await Promise.all(
-    postFilenames.map(async (file) => import(`./${file}`))
-  );
+  const postModules = await Promise.all(postFilenames.map(async (file) => import(`./${file}`)));
   // console.log(postModules)
   const postMetadata = postModules.map(({ meta }) => meta);
 
   return {
     props: {
-      data: postMetadata[0],
+      data: postMetadata,
     }
   }
 }
@@ -31,15 +29,19 @@ export default function AllReactPosts({ data }) {
       </Head>
       <br />
       <br />
-      <div style={{ marginLeft: '200px' }}>
-        <Link href="/posts/react/googleSignIn" passHref>
-          <a><h4 style={{ color: '#d23669' }}><strong>{data.title}</strong></h4>
-            <span>{data.publishDate}&nbsp;&nbsp;|</span>&nbsp;&nbsp;
-            <span>{data.time}</span>
-            <p>{data.description}</p>
-          </a>
-        </Link>
-      </div>
+
+      {/* listing of all react posts */}
+      {data.map(post => {
+        return <div key={post.id} style={{ marginLeft: '200px' }}>
+          <Link href={`/posts/react/${post.slug}`} passHref>
+            <a><h4 style={{ color: '#d23669' }}><strong>{post.title}</strong></h4>
+              <span>{post.publishDate}&nbsp;&nbsp;|</span>&nbsp;&nbsp;
+              <span>{post.time}</span>
+              <p>{post.description}</p>
+            </a>
+          </Link>
+        </div>
+      })}
     </div >
   )
 }
