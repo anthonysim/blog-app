@@ -6,7 +6,7 @@ import path from 'path';
 
 
 export async function getStaticProps() {
-  const postDirectory = path.join(process.cwd(), "pages/posts/react");
+  const postDirectory = path.join(process.cwd(), 'pages/posts/react');
   const postFilenames = fs.readdirSync(postDirectory).filter(file => file.includes('mdx'));
   const postModules = await Promise.all(postFilenames.map(async (file) => import(`./${file}`)));
   // console.log(postModules)
@@ -20,6 +20,7 @@ export async function getStaticProps() {
 }
 
 export default function AllReactPosts({ data }) {
+  console.log(data)
   return (
     <div >
       <Head>
@@ -31,17 +32,18 @@ export default function AllReactPosts({ data }) {
       <br />
 
       {/* listing of all react posts */}
-      {data.map(post => {
-        return <div key={post.id} style={{ marginLeft: '200px' }}>
-          <Link href={`/posts/react/${post.slug}`} passHref>
-            <a><h4 style={{ color: '#d23669' }}><strong>{post.title}</strong></h4>
-              <span>{post.publishDate}&nbsp;&nbsp;|</span>&nbsp;&nbsp;
-              <span>{post.time}</span>
-              <p>{post.description}</p>
-            </a>
-          </Link>
-        </div>
-      })}
+      {data.sort((a, b) => b.id - a.id)
+        .map(post => {
+          return <div key={post.id} style={{ marginLeft: '200px' }}>
+            <Link href={`/posts/react/${post.slug}`} passHref>
+              <a><h4 style={{ color: '#d23669' }}><strong>{post.title}</strong></h4>
+                <span>{post.publishDate}&nbsp;&nbsp;|</span>&nbsp;&nbsp;
+                <span>{post.time}</span>
+                <p>{post.description}</p>
+              </a>
+            </Link>
+          </div>
+        })}
     </div >
   )
 }

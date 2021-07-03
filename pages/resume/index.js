@@ -1,7 +1,7 @@
 import Head from 'next/head';
 
 
-export default function Contact() {
+export default function Resume() {
   return (
     <div>
       <Head>
@@ -9,7 +9,7 @@ export default function Contact() {
         <meta name="description" content="list of posts" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      Contact!
+      Resume!
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Navbar, Container, Nav } from 'react-bootstrap';
+import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 
@@ -7,32 +7,34 @@ import { AiOutlineMail } from "react-icons/ai";
 export default function Navigation() {
   return (
     <div>
-      <Navbar variant="light">
-        <Container>
+      <Container>
+        <Navbar expand="md">
+
+          {/* link to home on navbar */}
           <Link href="/" passHref>
-            <Navbar.Brand><a className="logo" style={{ color: '#d23669' }}>Anthony Sim | DEV&nbsp;&nbsp;&nbsp;</a></Navbar.Brand>
+            <Navbar.Brand className="logo" style={{ color: '#d23669' }}>Anthony Sim | DEV</Navbar.Brand>
           </Link>
-          <Nav className="me-auto">
-            <Link href="/#">About&nbsp;&nbsp;&nbsp;&nbsp;</Link>
-            <Link href="#">Posts&nbsp;&nbsp;&nbsp;&nbsp;</Link>
-            <Link href="/#">Resume</Link>
-          </Nav>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="mr-auto">
 
-          {/* Email */}
-          <a target="_blank" rel="noreferrer" href="mailto:anthonyysim@gmail.com">
-            <AiOutlineMail style={{ fontSize: '30px' }} />&nbsp;&nbsp;&nbsp;
-          </a>
-
-          {/* Github */}
-          <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/anthony-sim-28214850/"><FaLinkedin style={{ fontSize: '30px' }} />&nbsp;&nbsp;&nbsp;
-          </a>
-
-          {/* Linkedin */}
-          < a target="_blank" rel="noreferrer" href="https://github.com/anthonysim" >
-            <FaGithub style={{ fontSize: '30px' }} />
-          </a>
-        </Container>
-      </Navbar>
+              {/* navabar links */}
+              <Link href="/posts" passHref>
+                <Nav.Link >Posts</Nav.Link>
+              </Link>
+              <Link href="/about" passHref>
+                <Nav.Link href="#home">About</Nav.Link>
+              </Link>
+              <Link href="/resume" passHref>
+                <Nav.Link href="#link">Resume</Nav.Link>
+              </Link>
+              <Link href="/contact" passHref>
+                <Nav.Link href="#contact">Contact</Nav.Link>
+              </Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
+      </Container>
     </div >
   )
 }
