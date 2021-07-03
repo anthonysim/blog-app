@@ -1,6 +1,6 @@
-# Project Name
+# Anthony Sim Blog
 
-Blog application for my site on www.anthonysim.dev
+> www.anthonysim.dev
 
 ## Table of Contents
 
