@@ -1,3 +1,6 @@
+
+import CopyCodeBlock from '../../../components/CopyToClipBoard';
+
 <!-- meta data -->
 export const meta = {
   id: 1,
@@ -9,6 +12,7 @@ export const meta = {
   author: "Anthony Sim",
   tag: ["react", "google", "signin"],
 };
+
 
 ---
 # Google Sign In with React
@@ -24,8 +28,9 @@ Here are the links to the official docs and my github repo for reference.
 
 **Step 1: Add the following script to your index.html**
 
+<CopyCodeBlock text={'<script src="https://apis.google.com/js/platform.js" async defer></script>'}/>
+
 ```
-// index.html
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 ```
 

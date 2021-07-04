@@ -14,6 +14,7 @@ export default function Layout({ children }) {
       <br />
       <br />
       <br />
+      <br />
       <Footer />
     </div>
   )
