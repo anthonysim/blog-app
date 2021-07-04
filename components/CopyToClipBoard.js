@@ -1,8 +1,8 @@
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { FaRegClipboard } from "react-icons/fa";
-import '../styles/CopyToClipboard.module.css';
+import styles from '../styles/CopyToClipboard.module.css';
 
-export default function CopyCodeBlock({ children }) {
+export default function CopyCodeBlock({ copiedCode }) {
   const copyBtnStyle = {
     backgroundColor: '#f8f8ff',
     borderColor: 'transparent',
@@ -12,10 +12,11 @@ export default function CopyCodeBlock({ children }) {
   }
 
   return (
-    <div className="grid">
-      <div>1</div>
-      <div>2</div>
-      {/* <button className="btn" style={copyBtnStyle}><FaRegClipboard style={{ verticalAlign: 'text-top' }} /></button> */}
+    <div className={styles.grid}>
+      <div style={{ backgroundColor: '#f8f8ff' }}></div>
+      <CopyToClipboard text={copiedCode}>
+        <button className="btn" style={copyBtnStyle}>Copy to Clipboard <FaRegClipboard style={{ verticalAlign: 'text-top' }} /></button>
+      </CopyToClipboard>
     </div>
   )
 }

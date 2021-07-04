@@ -28,7 +28,7 @@ Here are the links to the official docs and my github repo for reference.
 
 **Step 1: Add the following script to your index.html**
 
-<CopyCodeBlock text={'<script src="https://apis.google.com/js/platform.js" async defer></script>'}/>
+<CopyCodeBlock copiedCode={'<script src="https://apis.google.com/js/platform.js" async defer></script>'}/>
 
 ```
 <script src="https://apis.google.com/js/platform.js" async defer></script>
@@ -45,8 +45,18 @@ Note, make sure you specify the “Authorized Javascript origin.” Example: htt
 
 **Step 3: Load and initiate the Google API platform library.**
 
+<CopyCodeBlock copiedCode={`
+useEffect(() => {
+  window.gapi.load('client:auth2', () => {
+    window.gapi.client.init({
+      clientId: 'put in your google client id that you created in Step 2 here',
+      scope: 'email'
+    })
+  });
+}, [])
+`}/>
+
 ```
-// loads and initates when App is "mounted"
 useEffect(() => {
   window.gapi.load('client:auth2', () => {
     window.gapi.client.init({
@@ -62,8 +72,21 @@ useEffect(() => {
 
 **Step 4: Create a button and click handler to sign in and sign out.**
 
+<CopyCodeBlock copiedCode={`
+async function googleHandler() {
+  try { const auth = window.gapi.auth2.getAuthInstance();
+    if (auth.isSignedIn.get() === false) {
+      await auth.signIn();
+      } else {
+        await auth.signOut();
+        }
+        } catch (err) {
+          console.error(err);
+          }
+        }
+`}/>
+
 ```
-// click handler
   async function googleHandler() {
   try {
     const auth = window.gapi.auth2.getAuthInstance();
@@ -77,8 +100,13 @@ useEffect(() => {
     console.error(err);
   }
 }
+```
 
-// button
+<CopyCodeBlock copiedCode={`
+<button onClick={googleHandler}>Sign in with Google</button>
+`}/>
+
+```
 <button onClick={googleHandler}>Sign in with Google</button>
 ```
 
