@@ -7,7 +7,6 @@ export default function ScrollToTop() {
   const [isVisible, setVisable] = useState(false);
 
   useEffect(() => {
-    setVisable(false);
     document.addEventListener("scroll", () => {
       toggleVisibility();
     });
