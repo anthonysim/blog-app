@@ -1,8 +1,21 @@
+import React, { useState, useEffect } from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { FaRegClipboard } from "react-icons/fa";
 import styles from '../styles/CopyToClipboard.module.css';
 
 export default function CopyCodeBlock({ copiedCode }) {
+  const [isCopied, setCopied] = useState(false);
+
+  const copiedHandler = (e) => {
+    e.preventDefault();
+    console.log('clicked')
+    setCopied(true);
+
+    setTimeout(() => {
+      setCopied(false);
+    }, 1750);
+  }
+
   const copyBtnStyle = {
     backgroundColor: '#f8f8ff',
     borderColor: 'transparent',
@@ -14,7 +27,11 @@ export default function CopyCodeBlock({ copiedCode }) {
     <div className={styles.grid}>
       <div style={{ backgroundColor: '#f8f8ff' }}></div>
       <CopyToClipboard text={copiedCode}>
-        <button className="btn" style={copyBtnStyle}>Copy <FaRegClipboard style={{ verticalAlign: 'text-top' }} /></button>
+        <button onClick={copiedHandler} className="btn" style={copyBtnStyle}>
+          {!isCopied
+            ? <div>Copy <FaRegClipboard style={{ verticalAlign: 'text-top' }} /></div>
+            : 'Copied '}
+        </button>
       </CopyToClipboard>
     </div>
   )
