@@ -1,0 +1,40 @@
+.button {
+  position: fixed;
+  display: inline-block;
+  background-color: #d23669;
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  border-radius: 4px;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+  color: #f8f8ff;
+}
+
+.button::after {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #f090b0;
+}
+
+.button:active {
+  background-color: #fff;
+}
+
+.button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scrollUpButton {
+  width: 100%;
+  text-align: right;
+}

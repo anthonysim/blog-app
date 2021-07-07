@@ -8,14 +8,13 @@ export default function CopyCodeBlock({ copiedCode }) {
     borderColor: 'transparent',
     color: 'grey',
     width: '100%',
-    textAlign: 'right',
   }
 
   return (
     <div className={styles.grid}>
       <div style={{ backgroundColor: '#f8f8ff' }}></div>
       <CopyToClipboard text={copiedCode}>
-        <button className="btn" style={copyBtnStyle}>Copy to Clipboard <FaRegClipboard style={{ verticalAlign: 'text-top' }} /></button>
+        <button className="btn" style={copyBtnStyle}>Copy <FaRegClipboard style={{ verticalAlign: 'text-top' }} /></button>
       </CopyToClipboard>
     </div>
   )

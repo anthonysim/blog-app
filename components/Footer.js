@@ -1,6 +1,6 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
-import styles from '../styles/Layout.module.css';
+import styles from '../styles/Footer.module.css';
 
 export default function Footer() {
   return (
