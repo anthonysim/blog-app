@@ -30,7 +30,7 @@ export default function CopyCodeBlock({ copiedCode }) {
         <button onClick={copiedHandler} className="btn" style={copyBtnStyle}>
           {!isCopied
             ? <div>Copy <FaRegClipboard style={{ verticalAlign: 'text-top' }} /></div>
-            : 'Copied '}
+            : 'Copied! '}
         </button>
       </CopyToClipboard>
     </div>
