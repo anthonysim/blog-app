@@ -1,0 +1,101 @@
+import CopyCodeBlock from '../../../components/CopyToClipBoard';
+
+<!-- meta data -->
+export const meta = {
+  id: 1,
+  title: "Sliding Windows for Max of K",
+  slug: "slidingWindows",
+  publishDate: "July 9, 2021",
+  time: "5 min read",
+  description: "Sliding Windows Max of K.",
+  author: "Anthony Sim",
+  tag: ["algos", "sliding windows", "max of k"],
+};
+
+
+---
+# Sliding Windows Max of K
+###### july 9, 2021 | 5 min read | algos
+
+<br/>
+
+So let's say you have the following array [ 1, 4, 2, 10, 2, 3, 1, 0, 20 ] and you have to find the maximum sum of k = 4 (k representing the all the subsets of the array).
+
+```
+let arr = [ 1, 4, 2, 10, 2, 3, 1, 0, 20 ];
+let k = 4;
+
+[ 1, 4, 2, 10 ]; // iteration 1, sum = 17
+[ 4, 2, 10, 2 ]; // iteration 2, sum = 18
+[ 2, 10, 2, 3 ]; // iteration 3, sum = 17
+[ 10, 2, 3, 1 ]; // iteration 4, sum = 16
+[ 2, 3, 1, 0 ];  // iteration 5, sum = 6
+[ 3, 1, 0, 20 ]; // iteration 6, sum = 24
+
+The maximum sum of k is 24!
+```
+
+The sliding method is used to "slide" as a subset with the length of k till the end of the array. Adding to the total of each subset and determining which subset has the maximum total number.
+
+To accomplish this task you should need to:
+
+1. Iterate through the array.
+2. Set a condition to check if the iteration is greater or equaled to k - 1.
+3. If the condition is true:
+
+  a. Determine the maximum amount.
+  b. Subtract out the beginning index of the subset.
+  c. Add the next index amount.
+
+4. Return the max!
+
+<CopyCodeBlock copiedCode={`
+function maxOfK(k, arr) {
+    let max = 0;
+    let sum = 0;
+    let index = 0;\n
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];\n
+        if (i >= k - 1) {
+          max = Math.max(max, sum);
+          sum -= arr[index]
+          index += 1;
+        }
+      }
+      return max;
+    }\n
+    console.log(maxOfK(4, [1, 4, 2, 10, 2, 3, 1, 0, 20]));
+`}/>
+
+```
+function maxOfK(k, arr) {
+    let max = 0;
+    let sum = 0;
+    let index = 0;
+
+    // Iterate through the array.
+    for (let i = 0; i < arr.length; i++) {
+
+        // adds each indexed number to the sum
+        sum += arr[i];
+
+        // Set a condition to check if the iteration is greater or equaled to k - 1
+        if (i >= k - 1) {
+            // Determine the maximum amount
+            max = Math.max(max, sum);
+
+            // Subtract out the beginning index of the subset
+            sum -= arr[index]
+
+            // Add the next index amount
+            index += 1;
+        }
+    }
+    // return the max!
+    return max;
+}
+
+console.log(maxOfK(4, [1, 4, 2, 10, 2, 3, 1, 0, 20]));
+```
+
+That's it! Thanks for reading!

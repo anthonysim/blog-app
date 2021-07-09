@@ -79,8 +79,27 @@ export default function Card() {
           </Link>
         </div>
 
-        {/* Misc. */}
+        {/* Algorithms */}
         <div className="col-lg-6">
+          <br />
+          <Link href="/posts/algos" >
+            <a className="btn">
+              <div className="card shadow">
+                <div className="card-body" style={bodyStyleOptions}>
+                  <h5 className="card-title" style={titlebodyStyleOptions}>Algorithms</h5>
+                  <p className="card-text" style={bodyStyleOptions}>
+                    A collection of toy problems and algorithms with notes in hopes (mostly for me since I forget) of learning a better way to approach a solution.
+                  </p>
+                  <br />
+                  <strong className="bg-white">Read more {'->'}</strong>
+                </div>
+              </div>
+            </a>
+          </Link>
+        </div>
+
+        {/* Misc. */}
+        {/* <div className="col-lg-6">
           <br />
           <Link href="/posts" >
             <a className="btn">
@@ -95,7 +114,7 @@ export default function Card() {
               </div>
             </a>
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
   )
