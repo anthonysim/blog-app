@@ -4,17 +4,13 @@ import styles from '../styles/ScrollToTop.module.css';
 
 
 export default function ScrollToTop() {
-  const [isVisible, setVisable] = useState(false);
+  const [isVisible, setVisible] = useState(false);
 
   useEffect(() => {
-    document.addEventListener("scroll", () => {
-      toggleVisibility();
+    document.addEventListener('scroll', () => {
+      window.scrollY > 300 ? setVisible(true) : setVisible(false);
     });
   }, []);
-
-  const toggleVisibility = () => {
-    window.scrollY > 300 ? setVisable(true) : setVisable(false);
-  }
 
   // Set the top cordinate to 0
   // make scrolling smooth
@@ -27,7 +23,7 @@ export default function ScrollToTop() {
 
   return (
     <div className={styles.scrollUpButton}>
-      {isVisible && <a onClick={scrollToTop} className={styles.button}><FaChevronUp /></a>}
+      {isVisible && <div><a onClick={scrollToTop} className={styles.button}><FaChevronUp /></a></div>}
     </div>
   )
 }

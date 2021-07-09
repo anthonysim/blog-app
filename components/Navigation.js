@@ -22,9 +22,6 @@ export default function Navigation() {
               <Link href="/about" passHref>
                 <Nav.Link href="#home">About</Nav.Link>
               </Link>
-              {/* <Link href="/posts" passHref>
-                <Nav.Link >Posts</Nav.Link>
-              </Link> */}
               <Link href="/resume" passHref>
                 <Nav.Link href="#link">Resume</Nav.Link>
               </Link>

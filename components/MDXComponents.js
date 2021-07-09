@@ -13,7 +13,6 @@ const MDXComponents = {
   // p: (props) => {
   //   return <p style={paragraphStyleOptions} {...props} />
   // },
-
   code: ({ children }) => {
     return (
       <SyntaxHighlighter language="javascript" style={docco} customStyle={{ fontSize: '15px' }}>

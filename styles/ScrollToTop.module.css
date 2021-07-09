@@ -23,6 +23,7 @@
 .button:hover {
   cursor: pointer;
   background-color: #f090b0;
+  color: #fff;
 }
 
 .button:active {

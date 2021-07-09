@@ -1,4 +1,3 @@
-
 import CopyCodeBlock from '../../../components/CopyToClipBoard';
 
 <!-- meta data -->
@@ -114,6 +113,16 @@ async function googleHandler() {
 <br/>
 
 **Useful gapi methods:**
+
+<CopyCodeBlock copiedCode={`
+const auth = window.gapi.auth2.getAuthInstance();\n
+// checks if you're signed in/out true/false
+auth.isSignedIn.get();\n
+// signs you in
+auth.signIn();\n
+// signs you out
+auth.signOut();
+`}/>
 
 ```
 const auth = window.gapi.auth2.getAuthInstance();
