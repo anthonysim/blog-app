@@ -31,3 +31,10 @@ a {
 .card:hover {
   background-color: #d23669;
 }
+
+@media screen and (max-width: 765px) {
+  .copy {
+    display: none;
+    color: blue;
+  }
+}

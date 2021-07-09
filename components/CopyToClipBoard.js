@@ -16,22 +16,24 @@ export default function CopyCodeBlock({ copiedCode }) {
     }, 1750);
   }
 
-  const copyBtnStyle = {
+  const copyBtnStyles = {
     backgroundColor: '#f8f8ff',
     borderColor: 'transparent',
     width: '100%',
   }
 
   return (
-    <div className={styles.grid}>
-      <div style={{ backgroundColor: '#f8f8ff' }}></div>
-      <CopyToClipboard text={copiedCode}>
-        <button onClick={copiedHandler} className="btn" style={copyBtnStyle}>
-          {!isCopied
-            ? <div>Copy <FaRegClipboard style={{ verticalAlign: 'text-top' }} /></div>
-            : <div style={{ color: 'blue' }}>Copied! </div>}
-        </button>
-      </CopyToClipboard>
+    <div className="copy">
+      <div className={styles.grid}>
+        <div style={{ backgroundColor: '#f8f8ff' }}></div>
+        <CopyToClipboard text={copiedCode}>
+          <button onClick={copiedHandler} className="btn" style={copyBtnStyles}>
+            {!isCopied
+              ? <span>Copy <FaRegClipboard style={{ verticalAlign: 'text-top' }} /></span>
+              : <span style={{ color: 'blue' }}>Copied! </span>}
+          </button>
+        </CopyToClipboard>
+      </div >
     </div>
   )
 }
