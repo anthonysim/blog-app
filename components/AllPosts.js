@@ -9,12 +9,12 @@ export default function AllPosts({ children }) {
     <div>
       <Head>
         <title>{title}</title>
-        <meta name="description" content="all react posts" />
+        <meta name="description" content={title} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <h1 style={{ marginLeft: '200px', color: '#d23669' }}>{children[0].tag[0].toUpperCase()}</h1>
       <br />
       <br />
-
       {children.sort((a, b) => b.id - a.id)
         .map(post => {
           return <div key={post.id} style={{ marginLeft: '200px' }}>
@@ -27,6 +27,6 @@ export default function AllPosts({ children }) {
             </Link>
           </div>
         })}
-    </div>
+    </div >
   )
 }

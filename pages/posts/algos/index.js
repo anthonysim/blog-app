@@ -17,7 +17,7 @@ export async function getStaticProps() {
   }
 }
 
-export default function AllAlgos({ data }) {
+export default function AllAlgosPosts({ data }) {
   console.log(data)
   return (
     <div >

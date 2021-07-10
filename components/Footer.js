@@ -19,7 +19,7 @@ export default function Footer() {
         </a>
         &nbsp;&nbsp;
         {/* Linkedin */}
-        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/anthony-sim-28214850/"><FaLinkedin style={{ fontSize: '30px' }} />&nbsp;&nbsp;&nbsp;
+        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/sim-anthony"><FaLinkedin style={{ fontSize: '30px' }} />&nbsp;&nbsp;&nbsp;
         </a>
       </footer>
     </div>

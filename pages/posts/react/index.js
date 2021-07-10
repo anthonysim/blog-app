@@ -8,7 +8,6 @@ export async function getStaticProps() {
   const postDirectory = path.join(process.cwd(), 'pages/posts/react');
   const postFilenames = fs.readdirSync(postDirectory).filter(file => file.includes('mdx'));
   const postModules = await Promise.all(postFilenames.map(async (file) => import(`./${file}`)));
-  // console.log(postModules)
   const postMetadata = postModules.map(({ meta }) => meta);
 
   return {
