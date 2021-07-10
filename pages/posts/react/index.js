@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import { FaCoffee } from "react-icons/fa";
+import AllPosts from '../../../components/AllPosts';
 import fs from 'fs';
 import path from 'path';
 
@@ -30,21 +30,10 @@ export default function AllReactPosts({ data }) {
       </Head>
       <br />
       <br />
-
-      {/* listing of all react posts */}
-      {data.sort((a, b) => b.id - a.id)
-        .map(post => {
-          return <div key={post.id} style={{ marginLeft: '200px' }}>
-            <Link href={`/posts/react/${post.slug}`} passHref>
-              <a><h4 style={{ color: '#d23669' }}><strong>{post.title}</strong></h4>
-                <span>{post.publishDate}&nbsp;&nbsp;|</span>&nbsp;&nbsp;
-                <span>{post.time}</span>
-                <p>{post.description}</p>
-              </a>
-            </Link>
-          </div>
-        })}
-    </div >
+      <AllPosts>
+        {data}
+      </AllPosts >
+    </div>
   )
 }
 

@@ -86,9 +86,9 @@ export default function Card() {
             <a className="btn">
               <div className="card shadow">
                 <div className="card-body" style={bodyStyleOptions}>
-                  <h5 className="card-title" style={titlebodyStyleOptions}>Algorithms</h5>
+                  <h5 className="card-title" style={titlebodyStyleOptions}>ALGORITHMS</h5>
                   <p className="card-text" style={bodyStyleOptions}>
-                    A collection of toy problems and algorithms with notes in hopes (mostly for me since I forget) of learning a better way to approach a solution.
+                    A collection of coding problems and algorithms with notes to (mostly for me since I forget) learn a better way to approach a solution.
                   </p>
                   <br />
                   <strong className="bg-white">Read more {'->'}</strong>
