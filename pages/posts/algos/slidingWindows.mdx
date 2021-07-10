@@ -63,7 +63,7 @@ function maxOfK(k, arr) {
         sum += arr[i];\n
         if (i >= k - 1) {
           max = Math.max(max, sum);
-          sum -= arr[index]
+          sum -= arr[index];
           index += 1;
         }
       }
@@ -90,7 +90,7 @@ function maxOfK(k, arr) {
             max = Math.max(max, sum);
 
             // Subtract out the beginning index of the subset
-            sum -= arr[index]
+            sum -= arr[index];
 
             // Add the next index amount
             index += 1;

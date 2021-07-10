@@ -42,7 +42,7 @@ export default function Card() {
         {/* NEXTJS */}
         <div className="col-lg-6">
           <br />
-          <Link href="/posts" >
+          <Link href="/posts/next" >
             <a className="btn">
               <div className="card shadow">
                 <div className="card-body" style={bodyStyleOptions}>
@@ -62,7 +62,7 @@ export default function Card() {
         {/* AWS */}
         <div className="col-lg-6">
           <br />
-          <Link href="/posts" >
+          <Link href="/posts/aws" >
             <a className="btn">
               <div className="card shadow">
                 <div className="card-body" style={bodyStyleOptions}>
