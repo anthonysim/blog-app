@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Link from 'next/link';
 import AllPosts from '../../../components/AllPosts';
 import fs from 'fs';
 import path from 'path';
