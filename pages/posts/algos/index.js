@@ -28,9 +28,7 @@ export default function AllAlgosPosts({ data }) {
       </Head>
       <br />
       <br />
-      <AllPosts>
-        {data}
-      </AllPosts >
+      <AllPosts data={data} />
     </div>
   )
 }

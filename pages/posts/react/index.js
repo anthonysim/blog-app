@@ -28,9 +28,7 @@ export default function AllReactPosts({ data }) {
       </Head>
       <br />
       <br />
-      <AllPosts>
-        {data}
-      </AllPosts >
+      <AllPosts data={data} />
     </div>
   )
 }
