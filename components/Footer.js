@@ -5,8 +5,8 @@ import styles from '../styles/Footer.module.css';
 export default function Footer() {
   return (
     <div>
-      <footer className={styles.foot}>
-        <span >© 2021 | Forgetful SE </span>
+      <div className={styles.pageContainer}>
+        <footer className={styles.footer}><span >© 2021 | Forgetful SE</span> </footer>
 
         {/* Email */}
         {/* <a target="_blank" rel="noreferrer" href="mailto:anthonyysim@gmail.com">
@@ -21,7 +21,7 @@ export default function Footer() {
         {/* Linkedin */}
         {/* <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/sim-anthony"><FaLinkedin style={{ fontSize: '30px' }} />&nbsp;&nbsp;&nbsp;
         </a> */}
-      </footer>
-    </div>
+      </div>
+    </div >
   )
 }

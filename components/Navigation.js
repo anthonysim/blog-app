@@ -23,12 +23,16 @@ export default function Navigation() {
               <Link href="/about" passHref>
                 <Nav.Link>About</Nav.Link>
               </Link>
+              {/* <Link href="#" passHref>
+                <Nav.Link>Categories</Nav.Link>
+              </Link> */}
               <Link href="/resume" passHref>
                 <Nav.Link>Resume</Nav.Link>
               </Link>
-              <Link href="/contact" passHref>
+
+              {/* <Link href="/contact" passHref>
                 <Nav.Link>Contact</Nav.Link>
-              </Link>
+              </Link> */}
             </Nav>
 
             {/* github */}
