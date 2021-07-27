@@ -1,0 +1,12 @@
+.github, .linkedin {
+  color: black;
+  font-size: 30px;
+}
+
+.github:hover {
+  color: gray;
+}
+
+.linkedin:hover {
+  color: #0072b1;
+}

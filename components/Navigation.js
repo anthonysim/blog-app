@@ -3,6 +3,7 @@ import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 
+import styles from '../styles/Navigation.module.css';
 
 export default function Navigation() {
   return (
@@ -30,17 +31,19 @@ export default function Navigation() {
               </Link>
             </Nav>
 
+            {/* github */}
             <Nav className="justify-content-right">
-              <Nav.Link target="_blank" rel="noreferrer" href="https://github.com/anthonysim"><FaGithub style={{ fontSize: '30px' }} />
+              <Nav.Link target="_blank" rel="noreferrer" href="https://github.com/anthonysim"><FaGithub className={styles.github} />
               </Nav.Link>
 
-              <Nav.Link target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/sim-anthony"><FaLinkedin style={{ fontSize: '30px', color: '0072b1' }} />
+              {/* linkedin */}
+              <Nav.Link target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/sim-anthony"><FaLinkedin className={styles.linkedin} />
               </Nav.Link>
             </Nav>
-
           </Navbar.Collapse>
         </Navbar>
       </Container>
     </div >
   )
 }
+
