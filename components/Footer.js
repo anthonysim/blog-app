@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <div>
       <footer className={styles.foot}>
-        <span >© 2021 | ForgetfulSE </span>
+        <span >© 2021 | Forgetful SE </span>
 
         {/* Email */}
         {/* <a target="_blank" rel="noreferrer" href="mailto:anthonyysim@gmail.com">
@@ -14,13 +14,13 @@ export default function Footer() {
         </a> */}
 
         {/* Github */}
-        < a target="_blank" rel="noreferrer" href="https://github.com/anthonysim" >
+        {/* < a target="_blank" rel="noreferrer" href="https://github.com/anthonysim" >
           <FaGithub style={{ fontSize: '30px' }} />
         </a>
-        &nbsp;&nbsp;
+        &nbsp;&nbsp; */}
         {/* Linkedin */}
-        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/sim-anthony"><FaLinkedin style={{ fontSize: '30px' }} />&nbsp;&nbsp;&nbsp;
-        </a>
+        {/* <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/sim-anthony"><FaLinkedin style={{ fontSize: '30px' }} />&nbsp;&nbsp;&nbsp;
+        </a> */}
       </footer>
     </div>
   )

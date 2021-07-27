@@ -16,19 +16,28 @@ export default function Navigation() {
           </Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mr-auto">
+            <Nav className="me-auto">
 
               {/* navabar links */}
               <Link href="/about" passHref>
-                <Nav.Link href="#home">About</Nav.Link>
+                <Nav.Link>About</Nav.Link>
               </Link>
               <Link href="/resume" passHref>
-                <Nav.Link href="#link">Resume</Nav.Link>
+                <Nav.Link>Resume</Nav.Link>
               </Link>
               <Link href="/contact" passHref>
-                <Nav.Link href="#contact">Contact</Nav.Link>
+                <Nav.Link>Contact</Nav.Link>
               </Link>
             </Nav>
+
+            <Nav className="justify-content-right">
+              <Nav.Link target="_blank" rel="noreferrer" href="https://github.com/anthonysim"><FaGithub style={{ fontSize: '30px' }} />
+              </Nav.Link>
+
+              <Nav.Link target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/sim-anthony"><FaLinkedin style={{ fontSize: '30px', color: '0072b1' }} />
+              </Nav.Link>
+            </Nav>
+
           </Navbar.Collapse>
         </Navbar>
       </Container>
