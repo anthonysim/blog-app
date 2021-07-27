@@ -26,9 +26,9 @@ export default function Navigation() {
               {/* <Link href="#" passHref>
                 <Nav.Link>Categories</Nav.Link>
               </Link> */}
-              <Link href="/resume" passHref>
-                <Nav.Link>Resume</Nav.Link>
-              </Link>
+
+              <Nav.Link target="_blank" rel="noreferrer" href="https://drive.google.com/file/d/1v4x9BUasrUOIPkUAkIix-X4Rfl2xZb4U/view?usp=sharing" >Resume</Nav.Link>
+
 
               {/* <Link href="/contact" passHref>
                 <Nav.Link>Contact</Nav.Link>
