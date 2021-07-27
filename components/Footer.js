@@ -16,8 +16,8 @@ export default function Footer() {
         {/* Github */}
         {/* < a target="_blank" rel="noreferrer" href="https://github.com/anthonysim" >
           <FaGithub style={{ fontSize: '30px' }} />
-        </a>
-        &nbsp;&nbsp; */}
+        </a> */}
+        {/* &nbsp;&nbsp; */}
         {/* Linkedin */}
         {/* <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/sim-anthony"><FaLinkedin style={{ fontSize: '30px' }} />&nbsp;&nbsp;&nbsp;
         </a> */}

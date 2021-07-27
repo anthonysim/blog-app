@@ -88,7 +88,7 @@ export default function Card() {
                 <div className="card-body" style={bodyStyleOptions}>
                   <h5 className="card-title" style={titlebodyStyleOptions}>ALGORITHMS</h5>
                   <p className="card-text" style={bodyStyleOptions}>
-                    A collection of coding problems and algorithms with notes to (mostly for me since I forget) learn a better way to approach a solution.
+                    A collection of coding problems and algorithms with notes to learn a better way to approach a solution.
                   </p>
                   <br />
                   <strong className="bg-white">Read more {'->'}</strong>
