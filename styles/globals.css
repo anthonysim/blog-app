@@ -28,9 +28,9 @@ a {
   cursor: pointer;
 }
 
-.card:hover {
+/* .card:hover {
   background-color: #d23669;
-}
+} */
 
 @media screen and (max-width: 765px) {
   .copy {
