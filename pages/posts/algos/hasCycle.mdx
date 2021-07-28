@@ -1,0 +1,85 @@
+import CopyCodeBlock from '../../../components/CopyToClipBoard';
+import BlogMeta from '../../../components/BlogMeta';
+
+
+<!-- meta data -->
+export const meta = {
+  id: 2,
+  title: "Linked List Cycle",
+  slug: "hasCycle",
+  publishDate: "July 27, 2021",
+  time: "5 min read",
+  description: "Linked List Has Cycle.",
+  author: "Anthony Sim",
+  tag: ["algos", "leetcode", "has cycle"],
+};
+
+<BlogMeta meta={meta}/>
+
+---
+# Linked List Cycle
+###### july 27, 2021 | 5 min read | algos
+
+<br/>
+
+<p>This article is in reference to the leetcode problem #141 Linked List Cycle <a target="_blank" href="https://leetcode.com/problems/linked-list-cycle/" style={{ color: 'blue' }}>here.</a></p>
+
+<p>So the problem gives you a linked list like the following: <strong>3 --> 2 --> 0 --> 4</strong> and asks you to find out if the linked list has a cycle or not? </p>
+
+<p>If so, return <strong>true</strong>. If not, return <strong>false</strong>.</p>
+
+<p>To find the answer to this question you would use a "slow" and "fast" pointer.</p>
+
+<p>Exhibit A below shows that from the first node, the "slow" pointer takes 1 step (3 to 2) while the "fast" pointer takes 2 steps (3 to 0).</p>
+
+<strong>Exhibit A:</strong>
+
+![hasCycle-1](https://user-images.githubusercontent.com/31682285/127266720-5e20e9d8-b95b-4e7e-af4e-0cdc5e73019f.png)
+
+<p>The next step the "slow" pointer takes 1 step (2 to 0) and the "fast" pointer takes 2 steps (0 to 2). The "fast" pointer wraps around passing the initial node.</p>
+
+<strong>Exhibit B:</strong>
+
+![hasCycle-2](https://user-images.githubusercontent.com/31682285/127266735-8fae8c4e-1f39-4fa7-bc4a-4d5529dee8ba.png)
+
+<p>The final step the "slow" pointer takes 1 step (0 to 4) and the "fast" pointer takes 2 steps (2 to 4). Both pointers "point" to 4 which would return <strong>true</strong> because both pointers pointed to the same node proving that this linked list is a cycle.</p>
+
+<strong>Exhibit C:</strong>
+
+![hasCycle-3](https://user-images.githubusercontent.com/31682285/127266433-a95d8e5b-38eb-4104-bbd3-2e1566881bfc.png)
+
+<p>Now in the case that this wasn't a linked list at some point the linked list would end because the pointers would never "wrap" around. In this case, this would return <strong>false.</strong> </p>
+
+<CopyCodeBlock copiedCode={`
+var hasCycle = function(head) {
+    let slow = head;
+    let fast = head;\n
+    while (fast && fast.next) {
+        slow = slow.next;
+        fast = fast.next.next;\n
+        if (slow === fast) {
+            return true;
+        }
+    }
+    return false;
+};
+`}/>
+
+```
+var hasCycle = function(head) {
+    let slow = head;
+    let fast = head;
+
+    while (fast && fast.next) {
+        slow = slow.next;
+        fast = fast.next.next;
+
+        if (slow === fast) {
+            return true;
+        }
+    }
+    return false;
+};
+```
+
+That's it! Thanks for reading!

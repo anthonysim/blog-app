@@ -11,7 +11,7 @@ export const meta = {
   time: "5 min read",
   description: "Sliding Windows Max of K.",
   author: "Anthony Sim",
-  tag: ["algos", "sliding windows", "max of k"],
+  tag: ["algos", "leetcode", "sliding windows"],
 };
 
 <BlogMeta meta={meta}/>
@@ -22,7 +22,7 @@ export const meta = {
 
 <br/>
 
-This article is in reference to the leetcode problem <a target="_blank" href="https://leetcode.com/problems/sliding-window-maximum" style={{ color: 'blue' }}>here.</a>
+This article is in reference to the leetcode problem #239 Sliding Window Maximum <a target="_blank" href="https://leetcode.com/problems/sliding-window-maximum" style={{ color: 'blue' }}>here.</a>
 
 So let's say you have the following array [ 1, 4, 2, 10, 2, 3, 1, 0, 20 ] and you have to find the maximum sum of k = 4.
 
@@ -74,6 +74,8 @@ function maxSlidingWindow(k, arr) {
     console.log(maxSlidingWindow(4, [1, 4, 2, 10, 2, 3, 1, 0, 20]));
 `}/>
 
+
+
 ```
 function maxSlidingWindow(k, arr) {
     let max = 0;
@@ -106,3 +108,4 @@ console.log(maxSlidingWindow(4, [1, 4, 2, 10, 2, 3, 1, 0, 20]));
 ```
 
 That's it! Thanks for reading!
+
