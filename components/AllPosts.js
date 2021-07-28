@@ -12,7 +12,7 @@ export default function AllPosts({ data }) {
         <meta name="description" content={title} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1 style={{ marginLeft: '200px', color: '#d23669' }}>{data[0].tag[0].toUpperCase()}</h1>
+      <h1 style={{ marginLeft: '200px', color: '#d23669' }}>{data[0].tag[0].toUpperCase()} POSTS</h1>
       <br />
       <br />
       {data.sort((a, b) => b.id - a.id)

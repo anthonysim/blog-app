@@ -22,6 +22,8 @@ export const meta = {
 
 <br/>
 
+This article is in reference to the leetcode problem <a target="_blank" href="https://leetcode.com/problems/sliding-window-maximum" style={{ color: 'blue' }}>here.</a>
+
 So let's say you have the following array [ 1, 4, 2, 10, 2, 3, 1, 0, 20 ] and you have to find the maximum sum of k = 4.
 
 ```
@@ -55,7 +57,7 @@ To accomplish this task you should need to:
 4. Return the max!
 
 <CopyCodeBlock copiedCode={`
-function maxOfK(k, arr) {
+function maxSlidingWindow(k, arr) {
     let max = 0;
     let sum = 0;
     let index = 0;\n
@@ -69,11 +71,11 @@ function maxOfK(k, arr) {
       }
       return max;
     }\n
-    console.log(maxOfK(4, [1, 4, 2, 10, 2, 3, 1, 0, 20]));
+    console.log(maxSlidingWindow(4, [1, 4, 2, 10, 2, 3, 1, 0, 20]));
 `}/>
 
 ```
-function maxOfK(k, arr) {
+function maxSlidingWindow(k, arr) {
     let max = 0;
     let sum = 0;
     let index = 0;
@@ -100,7 +102,7 @@ function maxOfK(k, arr) {
     return max;
 }
 
-console.log(maxOfK(4, [1, 4, 2, 10, 2, 3, 1, 0, 20]));
+console.log(maxSlidingWindow(4, [1, 4, 2, 10, 2, 3, 1, 0, 20]));
 ```
 
 That's it! Thanks for reading!
