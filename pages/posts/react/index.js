@@ -18,7 +18,7 @@ export async function getStaticProps() {
 }
 
 export default function AllReactPosts({ data }) {
-  console.log(data)
+  // console.log(data)
   return (
     <div >
       <Head>
